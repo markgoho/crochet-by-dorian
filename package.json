@@ -1,0 +1,21 @@
+{
+  "name": "crochet-by-dorian",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "cd hugo && hugo server --liveReloadPort 443",
+    "build": "cd hugo && hugo --minify",
+    "build:local": "rm -rf public && npm run build"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "eslint": "^9.17.0",
+    "prettier": "^3.4.2",
+    "prettier-plugin-go-template": "^0.0.15",
+    "@typescript-eslint/eslint-plugin": "latest",
+    "@typescript-eslint/parser": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}

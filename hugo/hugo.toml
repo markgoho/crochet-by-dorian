@@ -1,0 +1,5 @@
+baseURL = "https://crochetbydorian.shop/"
+languageCode = "en-us"
+title = "Crochet by Dorian"
+publishDir = "../public"
+enableRobotsTXT = true
