@@ -1,0 +1,13 @@
+:root {
+  --dark-blue: oklch(28.29% 0.0556 231.39);
+  --cream: oklch(97.8% 0.0093 99.98);
+  --teal: oklch(76.98% 0.0863 190.79);
+}
+
+@media (color-gamut: p3) {
+  :root {
+    --dark-blue: oklch(28.29% 0.0656 231.39);
+    --cream: oklch(97.8% 0.0552 99.98);
+    --teal: oklch(81.75% 0.1554 190.79);
+  }
+}
