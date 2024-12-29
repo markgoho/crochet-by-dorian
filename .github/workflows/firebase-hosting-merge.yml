@@ -14,6 +14,8 @@ jobs:
         with:
           hugo-version: 'latest'
           extended: true
+      - name: Install Dart Sass
+        run: sudo snap install dart-sass
       - uses: actions/checkout@v4
       - run: cd hugo && hugo --minify
       - uses: FirebaseExtended/action-hosting-deploy@v0
