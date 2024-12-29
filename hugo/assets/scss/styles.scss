@@ -1,9 +1,9 @@
-@import './scss/colors';
-@import './scss/typography';
-@import './scss/layout';
-@import './scss/buttons';
-@import './scss/header';
-@import './scss/nav-links';
+@use 'colors';
+@use 'typography';
+@use 'layout';
+@use 'buttons';
+@use 'header';
+@use 'nav-links';
 
 .visually-hidden {
   border: 0;

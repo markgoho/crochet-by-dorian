@@ -3,14 +3,14 @@
 <title>{{ .Title }}</title>
 
 <!-- Load Critical CSS Inline -->
-{{ $applicationCSS := "styles.scss" }}
-{{ $options := (dict "outputStyle" "compressed") }}
+{{ $applicationCSS := "scss/styles.scss" }}
+{{ $options := (dict "transpiler" "dartsass" "outputStyle" "compressed") }}
 {{ $appInlineCSS := resources.Get $applicationCSS | css.Sass $options }}
 <style>{{ $appInlineCSS.Content | safeCSS }}</style>
 
 <!-- Load Non-Critical Styles Asynchronously -->
-{{ $options := (dict "targetPath" "non-critical.css" "outputStyle" "compressed") }}
-{{ $nonCriticalCSS := resources.Get "non-critical.scss" | css.Sass $options | resources.Fingerprint }}
+{{ $options := (dict "transpiler" "dartsass" "targetPath" "non-critical.css" "outputStyle" "compressed") }}
+{{ $nonCriticalCSS := resources.Get "scss/non-critical.scss" | css.Sass $options | resources.Fingerprint }}
 <link
   rel="preload"
   href="{{ $nonCriticalCSS.RelPermalink }}"
