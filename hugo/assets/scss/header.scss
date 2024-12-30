@@ -1,1 +1,17 @@
+.nav-links-list {
+  background-color: var(--dark-blue);
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  height: 100%;
+}
 
+.nav-link {
+  text-decoration: none;
+  font-weight: 700;
+  color: var(--cream);
+  display: block;
+  padding: 1rem;
+}
