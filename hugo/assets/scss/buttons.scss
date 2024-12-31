@@ -1,0 +1,8 @@
+.button {
+  display: inline-block;
+  padding: var(--step--2) var(--step--1);
+  text-transform: uppercase;
+  background-color: var(--dark-blue);
+  color: var(--cream);
+  border-radius: 3px;
+}
