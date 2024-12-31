@@ -1,9 +1,10 @@
-.footer-title {
-  font-family: var(--serif);
-  font-size: 3rem;
-  color: var(--dark-blue);
-}
-
 .footer {
   background-color: var(--light-teal);
+  padding: var(--step-2);
+}
+
+.footer-title {
+  font-family: var(--serif);
+  font-size: var(--step-3);
+  color: var(--dark-blue);
 }
