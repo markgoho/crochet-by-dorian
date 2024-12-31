@@ -7,23 +7,23 @@
 }
 
 .newest-arrivals {
-  margin-block-start: var(--step-3);
-  padding-bottom: var(--step--4);
-  border-bottom: var(--step--5) solid var(--teal);
+  margin-block-start: var(--space-m);
+  padding-bottom: var(--space-2xs);
+  border-bottom: var(--space-3xs) solid var(--teal);
 }
 
 .cta {
-  margin-block-start: var(--step-3);
+  margin-block-start: var(--space-m);
 }
 
 .hero-image {
-  margin-block-start: var(--step-3);
+  margin-block-start: var(--space-m);
 }
 
 .image-gallery {
   display: flex;
   flex-direction: column;
-  gap: var(--step-1);
+  gap: var(--space-s);
 }
 
 .image-gallery > img {
