@@ -3,24 +3,27 @@
 }
 
 .tagline {
+  margin-block-start: var(--space-s);
   font-family: var(--sans-serif);
 }
 
-.newest-arrivals {
+.newest-arrivals > h2 {
   margin-block-start: var(--space-m);
+  margin-block-end: var(--space-s);
   padding-bottom: var(--space-2xs);
   border-bottom: var(--space-3xs) solid var(--teal);
 }
 
 .cta {
   margin-block-start: var(--space-m);
+  text-decoration: none;
 }
 
 .hero-image {
   margin-block-start: var(--space-m);
 }
 
-.image-gallery {
+.newest-arrivals > div {
   display: flex;
   flex-direction: column;
   gap: var(--space-s);

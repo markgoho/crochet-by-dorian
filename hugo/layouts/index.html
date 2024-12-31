@@ -8,16 +8,25 @@
 {{ define "main" }}
   <h1 class="page-title">Hand-hooked goods made with love by Dorian</h1>
   <h2 class="tagline">Custom and made-to-order crochet creations</h2>
-  <a class="cta button">Shop Now</a>
+  <a class="cta button" href="/shop/">Shop Now</a>
   <picture class="hero-image">
     <img src="/assets/images/dorian-crochet-landscape.webp" alt="Dorian" />
   </picture>
-  <h2 class="newest-arrivals">Newest Arrivals</h2>
-  <div class="image-gallery">
-    <img src="/assets/images/crochet-pants.webp" alt="crochet pants" />
-    <img src="/assets/images/crochet-sweater.webp" alt="crochet-sweater" />
-    <img src="/assets/images/crochet-shirt.webp" alt="crochet shirt" />
-    <img src="/assets/images/crochet-pillow.webp" alt="crochet pillow" />
-    <img src="/assets/images/crochet-shorts.webp" alt="crochet shorts" />
-  </div>
+  <section class="newest-arrivals">
+    <h2>Newest Arrivals</h2>
+    <div >
+      {{ $products := where .Site.RegularPages "Section" "products" }}
+      {{ $latest := $products.ByDate.Reverse | first 4 }}
+      {{ range $latest }}
+        <div class="product">
+          <a href="{{ .RelPermalink }}">
+            {{ with .Params.featured_image }}
+              <img src="/assets/images/{{ . }}" alt="{{ $.Title }}" />
+            {{ end }}
+          </a>
+        </div>
+      {{ end }}
+    </div>
+  </section>
+  <a href="/shop/">View all products</a>
 {{ end }}

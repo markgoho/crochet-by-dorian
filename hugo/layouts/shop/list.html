@@ -1,0 +1,32 @@
+{{ define "main" }}
+  <h1>{{ .Title }}</h1>
+
+  {{ .Content }}
+
+
+  <ul>
+    {{ range .Site.RegularPages }}
+      {{ if in .RelPermalink "/products/" }}
+        <li>
+          <a href="{{ .RelPermalink }}">
+            {{ with .Params.featured_image }}
+              <img
+                src="/assets/images/{{ . }}"
+                alt="{{ $.Title }}"
+                width="250"
+              />
+            {{ else }}
+              <img
+                src="/assets/images/default.jpg"
+                alt="Coming Soon"
+                width="250"
+              />
+            {{ end }}
+            {{ .Title }}
+          </a>
+          <p>{{ .Params.description }}</p>
+        </li>
+      {{ end }}
+    {{ end }}
+  </ul>
+{{ end }}
