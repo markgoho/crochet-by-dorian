@@ -8,17 +8,17 @@
     "build:local": "rm -rf public && npm run build"
   },
   "devDependencies": {
-    "@types/bun": "latest",
-    "@typescript-eslint/eslint-plugin": "latest",
-    "@typescript-eslint/parser": "latest",
-    "eslint": "^9.17.0",
-    "prettier": "^3.4.2",
+    "@types/bun": "^1.2.22",
+    "@typescript-eslint/eslint-plugin": "^8.44.0",
+    "@typescript-eslint/parser": "^8.44.0",
+    "eslint": "^9.36.0",
+    "prettier": "^3.6.2",
     "prettier-plugin-go-template": "^0.0.15",
-    "stylelint": "^16.12.0",
+    "stylelint": "^16.24.0",
     "stylelint-gamut": "^1.3.4",
-    "stylelint-config-recommended": "^14.0.1"
+    "stylelint-config-recommended": "^17.0.0"
   },
   "peerDependencies": {
-    "typescript": "^5.0.0"
+    "typescript": "^5.9.2"
   }
 }
