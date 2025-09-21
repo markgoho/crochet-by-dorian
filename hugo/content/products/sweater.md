@@ -16,4 +16,4 @@ availability: 'InStock' # Or "PreOrder" if made-to-order
 material: 'Cotton'
 ---
 
-More detailed description of the sweater, including care instructions, sizing information, etc.
+This site is under construction. Thanks for visiting!

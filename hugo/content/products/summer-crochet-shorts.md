@@ -12,3 +12,4 @@ currency: 'USD'
 availability: 'InStock'
 material: 'Cotton'
 ---
+This site is under construction. Thanks for visiting!

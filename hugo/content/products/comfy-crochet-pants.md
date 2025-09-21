@@ -12,3 +12,5 @@ currency: 'USD'
 availability: 'InStock'
 material: 'Cotton Blend'
 ---
+
+This site is under construction. Thanks for visiting!

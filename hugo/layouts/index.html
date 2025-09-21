@@ -8,13 +8,15 @@
 {{ define "main" }}
   <h1 class="page-title">Hand-hooked goods made with love by Dorian</h1>
   <h2 class="tagline">Custom and made-to-order crochet creations</h2>
+  <h3>This site is under construction. Thanks for visiting!</h3>
+
   <a class="cta button" href="/shop/">Shop Now</a>
   <picture class="hero-image">
     <img src="/assets/images/dorian-crochet-landscape.webp" alt="Dorian" />
   </picture>
   <section class="newest-arrivals">
     <h2>Newest Arrivals</h2>
-    <div >
+    <div>
       {{ $products := where .Site.RegularPages "Section" "products" }}
       {{ $latest := $products.ByDate.Reverse | first 4 }}
       {{ range $latest }}
